@@ -1,0 +1,14 @@
+Vanilla JavaScript #02. Counter
+
+1. 기능
+양수, 음수에 따라 색상이 바뀌는 카운터
+
+2. 자바스크립트 개념
+- DOM : querySelectorAll()
+- forEach()
+- addEventListener()
+- currentTarget 속성
+- classList
+- textContent
+
+3. app.js
