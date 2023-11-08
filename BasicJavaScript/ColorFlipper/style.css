@@ -1,17 +1,7 @@
 @import "../css/variables.css";
 
-/*
-=============== 
-Global Styles
-===============
-*/
-* {
-  box-sizing: border-box;
-}
 body {
   background-color: var(--clr-grey-10);
-  line-height: 1.5;
-  font-size: 0.875rem;
 }
 
 /*
@@ -38,18 +28,4 @@ main {
 }
 .color {
   color: var(--clr-primary-5);
-}
-.btn {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  padding: 0.5rem 1rem;
-  outline: none;
-  border: 1px solid var(--clr-black);
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: transparent;
-}
-.btn:hover {
-  color: var(--clr-white);
-  background-color: var(--clr-black);
 }

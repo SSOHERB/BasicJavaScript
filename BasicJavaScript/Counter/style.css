@@ -1,0 +1,23 @@
+@import "../css/variables.css";
+body {
+  color: var(--clr-grey-1);
+  background-color: var(--clr-grey-10);
+}
+
+/*
+===========
+Counter
+===========
+*/
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  text-align: center;
+}
+#value {
+  font-size: 6rem;
+}
