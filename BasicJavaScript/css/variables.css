@@ -59,6 +59,12 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
+main.main-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 section {
 	padding: 5rem 0;
 }
