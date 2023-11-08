@@ -59,6 +59,9 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
+section {
+	padding: 5rem 0;
+}
 .btn {
   font-size: 1.2rem;
   text-transform: uppercase;
