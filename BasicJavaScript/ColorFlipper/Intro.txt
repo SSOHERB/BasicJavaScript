@@ -1,0 +1,25 @@
+Vanilla JavaScript #01 Color Flipper
+
+1. 기능
+- 메뉴를 필터링 해주는 페이지
+
+2. 자바스크립트 개념
+- arrays, array.length
+- DOM : getElementById(), querySelector(), style.backgroundColor
+- addEventListener()
+- Math : floor(), random()
+
+3. app.js
+- getRandomNum()으로 생성된 랜덤 숫자가 DOM의 body와 .color의 색상을 조작하는 기능
+- 배열로 정해진 색상만 바꿀 수 있다.
+
+4. hex.js
+- getRandomNum()으로 생성된 랜덤 숫자가 hex 코드를 조합하고, 이 hex코드로 DOM의 body와 .color의 색상을 변경하는 기능
+- hex 코드를 조합할 수 있는 문자들을 배열로 선언해서 다양한 색상으로 바꿀 수 있다.
+
+4-1. hex.js 코딩 순서
+1) 배열에 hex code를 조합할 수 있는 문자를 넣는다.
+2) getRandomNum() 숫자를 랜덤으로 생성하는 함수를 만든다.
+3) addEventListener에 이벤트리스너(콜백함수)로 hex 코드를 만드는 반복문을 만든다.
+3-1) 이때, hexColor에 "#"을 할당해준다. hexColor에 getRandomNum()함수로 생성된 숫자를 추가한다.(연산자 사용)
+3-2) .color와 body의 backgroundColor에 hexColor를 넣는다.
