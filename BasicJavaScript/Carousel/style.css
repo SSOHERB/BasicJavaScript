@@ -3,17 +3,12 @@
 body {
 	background-color: var(--clr-grey-10);
 }
+
 /*
 =============== 
 Reviews
 ===============
 */
-main {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-}
 .title {
 	text-align: center;
 }
