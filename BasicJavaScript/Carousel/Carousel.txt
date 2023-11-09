@@ -1,4 +1,4 @@
-Vanilla JavaScript #02. Carousel
+Vanilla JavaScript #03. Carousel
 
 1. 기능
 - 버튼을 누르면 랜덤으로 리뷰를 보여주는 리뷰 캐러셀(슬라이드)
