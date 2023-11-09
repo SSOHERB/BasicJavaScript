@@ -1,18 +1,5 @@
 @import "../css/variables.css";
 
-body {
-  background: var(--clr-grey-10);
-}
-ul {
-  list-style: none;
-}
-button {
-  outline: none;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
 /*
 =============== 
 Sidebar
@@ -63,7 +50,6 @@ Sidebar
 	line-height: 2rem;
 }
 .links li a {
-	color: var(--clr-grey-1);
 	text-transform: uppercase;
 }
 

@@ -58,8 +58,10 @@ Global Styles
 body {
   line-height: 1.5;
   font-size: 0.875rem;
+  background-color: var(--clr-grey-10);
 }
 a {
+	color: var(--clr-grey-1);
 	text-decoration: none;
 }
 main.main-center {
@@ -70,6 +72,15 @@ main.main-center {
 }
 section {
 	padding: 5rem 0;
+}
+ul {
+  list-style: none;
+}
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 .btn {
   font-size: 1.2rem;

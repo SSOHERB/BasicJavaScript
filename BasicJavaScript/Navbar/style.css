@@ -1,12 +1,5 @@
 @import "../css/variables.css";
 
-body {
-	background: var(--clr-grey-10);
-}
-ul {
-	list-style-type: none;
-}
-
 /*
 =============== 
 Navbar
