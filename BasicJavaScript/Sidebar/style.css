@@ -1,0 +1,73 @@
+@import "../css/variables.css";
+
+body {
+  background: var(--clr-grey-10);
+}
+ul {
+  list-style: none;
+}
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*
+=============== 
+Sidebar
+===============
+*/
+
+.sidebar-toggle {
+  font-size: 2rem;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  transition: var(--transition);
+}
+.sidebar-toggle:hover {
+  background-color: var(--clr-grey-9);
+  transform: scale(1.1);
+	border-radius: 3px;
+}
+.sidebar {
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	top: 0;
+	left: -300px;
+	padding: 10px;
+	background-color: var(--clr-white);
+	transition: var(--transition);
+}
+.sidebar-header {
+	padding: 1rem 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.sidebar-header h2 {
+	font-size: 1.2rem;
+}
+.close-btn {
+	padding-bottom: 5px;
+	font-size: 1.2rem;
+	transition: var(--transition);
+}
+.close-btn:hover {
+	color: var(--clr-red-dark);
+	transform: scale(1.1);
+}
+.links li {
+	line-height: 2rem;
+}
+.links li a {
+	color: var(--clr-grey-1);
+	text-transform: uppercase;
+}
+
+/* Toggle Sidebar */
+.show-sidebar {
+	left: 0;
+}

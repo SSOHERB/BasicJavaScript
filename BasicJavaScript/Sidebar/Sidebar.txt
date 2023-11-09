@@ -1,0 +1,16 @@
+Vanilla JavaScript #04. Sidebar
+
+1. 기능 소개
+- 메뉴버튼을 누르면 왼쪽에서 나오는 사이드바 만들기
+
+2. 자바스크립트 개념
+- DOM : querySelector
+- addEventListener
+- classList.toggle()
+- classList.remove()
+
+3. app.js
+- Navbar의 app.js와 같은 방식이다.
+- toggle 버튼을 클릭했을 때, 숨어있는 사이드바에 가상 클래스(.show-sidebar) 추가/제거하는 메소드를 이용한다.
++ 사이드바 안에 있는 X 버튼(.close-btn)을 클릭했을 때 가상 클래스(.show-sidebar)를 제거하는 이벤트도 추가한다.
+- 이때, 가상클래스 (.show-sidebar)를 추가했을 때 위치를 css 속성, 값으로 넣어줘야한다.
