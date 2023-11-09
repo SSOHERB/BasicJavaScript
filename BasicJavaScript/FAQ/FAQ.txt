@@ -1,0 +1,12 @@
+Vanilla JavaScript #05. FAQ
+
+1. 기능 소개
+- 제목을 누르면 내용이 펼쳐지는 아코디언 형태의 FAQ
+
+2. 자바스크립트 개념
+- DOM : querySelectorAll()
+- addEventListener
+- forEach()
+- classList.remove(), classList.toggle()
+
+3. app.js
