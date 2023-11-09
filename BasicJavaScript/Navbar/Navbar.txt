@@ -9,3 +9,10 @@ Vanilla JavaScript #04. Navbar
 - classList.toggle()
 
 3. app.js
+모바일 버전에서 화면은 초기에 메뉴 링크가 숨어있고 클릭시, dropdown하게 된다.
+- 이벤트를 넣어줄 문서 객체는 햄버거 메뉴 버튼(.nav-toggle)
+- 콜백함수인 이벤트 핸들러의 대상은 메뉴 링크(.links)
+- 메뉴 링크 클래스(.links)에 가상 클래스(.show-links)를 추가하면 메뉴가 모바일에서 보여진다.
+<클래스 추가, 제거 방법 2가지>
+A. if,else 조건문안에서 클래스를 add(), remove() 하거나
+B. toggle()로 add, remove를 대체할 수 있다.
