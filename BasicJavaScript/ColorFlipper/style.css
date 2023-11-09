@@ -1,9 +1,5 @@
 @import "../css/variables.css";
 
-body {
-  background-color: var(--clr-grey-10);
-}
-
 /*
 =============== 
 Main
