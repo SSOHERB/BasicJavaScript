@@ -3,6 +3,6 @@
 
 # 예제 출처
 
-https://www.freecodecamp.org/korean/news/javascript-projects-for-beginners
-https://youtu.be/3PHXvlpOkf4?si=rxWYdm7cDvrS2fOT
-https://github.com/john-smilga/javascript-basic-projects
+https://www.freecodecamp.org/korean/news/javascript-projects-for-beginners <br>
+https://youtu.be/3PHXvlpOkf4?si=rxWYdm7cDvrS2fOT <br>
+https://github.com/john-smilga/javascript-basic-projects 
