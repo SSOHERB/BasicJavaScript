@@ -1,0 +1,15 @@
+Vanilla JavaScript #06. Tabs
+
+1. 기능
+- 간단한 탭 메뉴
+
+2. 자바스크립트 개념
+- DOM : querySelector, querySelectorAll, getElementById
+- addEventListener
+- classList.add(), remove()
+- forEach()
+- e.target.dataset.id
+
+3. app.js
+- HTML에서 각각의 button.tab-btn 요소에 data-id 속성을 부여한다.
+- e.target.id는 이벤트가 발생한 요소의 속성인 id를 반환
