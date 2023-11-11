@@ -14,7 +14,7 @@ tabswrap.addEventListener("click", (e) => {
     });
     e.target.classList.add("active");
 
-    // 다른 ta에 active 우선 제거
+    // 다른 tab에 active 우선 제거
     tabs.forEach((tab) => {
       tab.classList.remove("active");
     });
