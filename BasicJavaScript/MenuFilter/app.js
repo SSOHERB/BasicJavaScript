@@ -73,20 +73,22 @@ function showMenuItems(menuItems) {
 
 // 2. 버튼 누르기 함수
 function showMenuBtns() {
-  // array.reduce(콜백함수(accumulate, currentValue)) : 현재값 누적해서 최종값 반환
+  // 2-1. menu 배열에서 중복되지 않은 카테고리들 담는 함수
   const categories = menu.reduce(
-    // values 누적된 값, item 현재 순회 중인 배열 요소
     function (values, item) {
-      // 최종 배열에 category값이 없다면, 값 넣기
       if (!values.includes(item.category)) {
         values.push(item.category);
       }
       return values;
     },
-    ["all"] // "all" 버튼이 초기값
+    ["all"] // "all" 카테고리가 초기값
   );
 
-  // reduce 함수로 반환된 배열에 map함수로 값 리턴
+  /* 2-2. 주어진 카테고리를 HTML(button.btn-filter) 형식으로 가공하여 화면에 보여주는 함수
+				- categories 배열 원소들을 map 함수를 사용해서 HTML 문자열로 생성
+				- join 함수로 배열에 있는 문자열들(모든 카테고리)을 하나의 문자열로 생성
+				- 해당 문자열을 .btns-wrap 요소에 삽입
+	*/
   const categoryBtns = categories
     .map((category) => {
       return `<button type="button" class="btn-filter" data-id=${category}>${category}</button>`;
@@ -94,17 +96,16 @@ function showMenuBtns() {
     .join("");
   btnsWrap.innerHTML = categoryBtns;
 
-  // 생성된 각각의 button에 이벤트 걸기
+  /* 2-3. 생성된 button.btn-filter에 클릭 이벤트로 필터 기능을 넣은 함수
+				- button.btn-filter의 data-id 속성을 가져와서 menu.category와 일치하는 새로운 배열 생성 (filter함수 사용)
+				- 카테고리와 문자열 all과 같다면 showMenuItems실행하여 menu 배열 전체 보여주기 OR
+					다른 카테고리는 filter 기능으로 새로운 배열 보여주기
+	*/
   const filterBtns = btnsWrap.querySelectorAll(".btn-filter");
-  // console.log(filterBtns);
-
   filterBtns.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
       const category = e.currentTarget.dataset.id;
-      // console.log(category);
-      /* filter 함수에 만족하는 모든 요소를 모아 새 배열로 반환 
-				=> menu 배열에서 category 속성과 상수 category(btn-filter의 data-id)가 같으면
-			*/
+      // filter 함수에 만족하는 모든 요소를 모아 새 배열로 반환
       const menuCategory = menu.filter(function (menuItem) {
         if (menuItem.category === category) {
           return menuItem;
