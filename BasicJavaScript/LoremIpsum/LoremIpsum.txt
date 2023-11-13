@@ -1,0 +1,14 @@
+Vanilla JavaScript #08. Lorem Ipsum
+
+1. 기능
+- 더미 텍스트를 만들어주는 기능
+
+2. 자바스크립트 개념
+- parseInt()
+- Math.floor(), Math.random()
+- inNaN()
+- slice 메서드
+- event.preventDefault()
+
+3. app.js 설명 자세히보기
+https://ssoherb.tistory.com/

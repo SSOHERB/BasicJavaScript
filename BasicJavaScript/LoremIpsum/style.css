@@ -1,0 +1,40 @@
+@import "../css/variables.css";
+
+/* 
+================
+Lorem Ipsum.css
+================
+*/
+h2 {
+  text-align: center;
+}
+.lorem-form {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label {
+  font-size: 1.25rem;
+}
+.lorem-form input {
+  border: none;
+  margin: 0 0.5rem;
+  width: 4rem;
+  font-size: 1.25rem;
+  border-radius: var(--radius);
+  padding: 0.25rem 0.5rem;
+}
+.lorem-form button.btn {
+  background-color: var(--clr-primary-5);
+  border: none;
+}
+.lorem-txt {
+  margin-top: 2rem;
+}
+.result {
+  color: dodgerblue;
+  font-size: 0.8rem;
+  font-style: italic;
+  background-color: #efefef;
+}
