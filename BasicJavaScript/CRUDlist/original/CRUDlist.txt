@@ -1,0 +1,61 @@
+Vanilla JavaScript #09. CRUD List
+
+1. 기능
+- 아이템을 추가(create)하고 리스트에 보여지고(read) 수정하고(update) 삭제하는(delete) 기능
+
+2. 자바스크립트 개념
+- DOMContentLoaded
+- newDate()
+- createAttribute()
+- setAttribute()
+- appendChild()
+- filter()
+- map()
+
+* 웹 스토리지의 로컬 스토리지(localStorage)
+- 데이터를 클라이언트 단, 브라우저에서 데이터를 저장할 수 있는 기술을 웹 스토리지라고 한다.
+브라우저에서 여러 탭이나 창을 닫으면 저장해 둔 데이터도 함께 소멸된다. 반면, 로컬 스토리지는 여러 탭이나 창 간에 데이터가 서로 공유된다. 즉, 탭/창을 닫아도 데이터는 브라우저에 그대로 남아 있다.
+- 동일한 컴퓨터의 동일한 브라우저에서만 데이터 영속성을 가진다.
+- 오직 string 데이터 타입만 지원한다.
+
+* 기본 API
+- localStorage.setItem("key", "value")  키에 데이터 쓰기
+- localStorage.getItem("key")  키로부터 데이터 읽기
+- localStorage.removeItem("key")  키의 데이터 삭제
+- localStorage.clear();  모든 키의 데이터 삭제
+- localStorage.length;  저장된 키,값 쌍의 갯수
+
+3. app.js
+<< 기능 설명 >>
+## [추가] 버튼
+1) 로컬에 저장될 id값을 부여한다.
+2) <article> 태그에 부여된 id값을 매칭해주고,
+		하위 요소인 p, edit-btn, del-btn 등 전부 HTML 요소로 넣어준다.
+3) 따라서 [수정], [삭제] 버튼의 이벤트도 등록해야 한다.
+4) 요소의 속성이 설정된 <article>태그는 .item-list의 자식요소로 추가된다.
+5) "리스트에 아이템이 추가되었습니다." 라는 문구의 알럿이 뜬다.
+6) 추가된 item은 로컬에 id와 값이 함께 저장된다.
+
+## [삭제] 버튼
+1) 최상위 요소 자체를 삭제한다.
+2) 사용자가 볼 수 있도록 알럿이 뜬다.
+3) 로컬 저장소에서 해당 항목을 삭제한다. 브라우저에서 보이지 않는다.
+
+## [수정] 버튼
+1) 리스트에 쌓인 아이템 중에 수정 아이콘을 누른다.
+2) <p>의 텍스트 => <input>의 입력창에 찍힌다.
+3) article.item의 data-id 값을 editID에 저장한다.
+4) <input> 입력창 옆, .submit-btn 버튼이 "추가" 에서 "수정"으로 변경된다.
+
+## Alert
+1) 매개변수 text가 p.alert에 찍혀야 한다.
+2) p.alert는 2가지 버전으로 스타일이 변경된다. (danger, success)
+3) 매개변수로 받은 action은 alert-danger, alert-success로 클래스가 추가 되어야 한다.
+4) 1000ms(1s)뒤에 text는 빈 문자열로, action 클래스는 제거되어야 한다.
+
+## [전체 삭제] 버튼
+1) 리스트에(.item-list) article.item이 한개라도 있으면 [전체 삭제] 버튼을 눌렀을 때 모두 삭제되어야 한다.
+2) 뿐만 아니라, 리스트 전체를 감싸는 container 클래스를 제거한다.
+3) "전체 삭제되었습니다." 라는 빨간색 배경의 알럿 문구가 뜬다.
+4) 입력 필드와 수정 관련 상태 변수들의 기본값을 전부 초기화한다.
+5) 로컬 저장소에서도 해당 객체 전체가 삭제된다.

@@ -11,4 +11,4 @@ Vanilla JavaScript #08. Lorem Ipsum
 - event.preventDefault()
 
 3. app.js 설명 자세히보기
-https://ssoherb.tistory.com/
+https://ssoherb.tistory.com/39

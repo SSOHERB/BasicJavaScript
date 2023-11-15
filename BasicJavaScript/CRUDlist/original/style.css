@@ -1,0 +1,106 @@
+@import "../../css/variables.css";
+
+.section-inner {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  width: 800px;
+}
+
+/* Alert with JS */
+.alert {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 3px;
+}
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+}
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+}
+
+.list-form h3 {
+  text-align: center;
+  font-size: 40px;
+}
+.form-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-control input {
+  flex: 1;
+  border-color: transparent;
+  font-size: 1rem;
+  background-color: aliceblue;
+  padding: 0.25rem;
+  padding-left: 1rem;
+}
+.form-control button {
+  opacity: 0.8;
+  background-color: dodgerblue;
+  flex: 0 0 5rem;
+  letter-spacing: 2px;
+  padding: 0.5rem 0.25rem;
+  transition: 0.35s;
+}
+.form-control button:hover {
+  opacity: 1;
+}
+
+/* Item List */
+.list-container {
+  margin-top: 2rem;
+  transition: 0.3s;
+  /* visibility: hidden; */
+  /* border: 1px solid #000; */
+}
+.show-container {
+  visibility: visible;
+}
+
+/* item & edit, delete Buttons */
+.item-list article.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.item-list article.item .title {
+  font-size: 1rem;
+  margin: 0;
+}
+.edit-btn,
+.del-btn {
+  font-size: 1rem;
+  margin: 0 0.05rem;
+}
+.edit-btn {
+  color: green;
+}
+.edit-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.del-btn {
+  color: rebeccapurple;
+  transition: 0.2s;
+}
+
+/* Clear Button */
+.clear-btn {
+  color: red;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+.clear-btn:hover,
+.del-btn:hover {
+  transform: scale(1.1);
+}
